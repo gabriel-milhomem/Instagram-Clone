@@ -1,0 +1,628 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-style: normal;
+  font-size: 14px;
+	font-weight: 400;
+	font-family: 'segoe ui','Open Sans', sans-serif;
+	background-color: #FAFAFA;
+	color: #262626;
+	width: 100%;
+	padding-top: 54px;
+  line-height: 18px;
+}
+
+/* -----------CABECALHO------------*/
+.topo {
+	width: 100%;
+	display: flex;
+	height: 54px;
+	justify-content: center;
+	background-color: #ffffff;
+	border-bottom: 1px solid #DBDBDB;
+	position: fixed;
+	top: 0px;
+  z-index: 1;
+}
+
+.cabecalho_mobile {
+	display: none;
+	width: 100%;
+	height: 35px;
+}
+
+.cabecalho_desktop {
+	height: 100%;
+	width: 935px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.topo .linha {
+	width: 1px;
+	height: 100%;
+  background: black;
+}
+
+ion-icon {
+	width: 25px;
+	height: 25px;
+}
+
+ion-icon:hover, img:hover, h1, button, .seguir, .ver, .pointer {
+	cursor: pointer;
+}
+
+.pesquisar {
+	border: 1px solid #DBDBDB;
+	background: #FAFAFA;
+	border-radius: 2px;
+	width: 215px;
+	height: 28px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+.topo input {
+  height: 20px;
+  width: 170px;
+  margin-top: 5px;
+}
+
+::placeholder {
+  font-size: 14px;
+  color: #a7a7a7;
+  font-family: 'segoe ui', sans-serif;
+  letter-spacing: -0.15px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.busca {
+	width: 17px;
+	color: #c7c7c7;
+	height: 17px;
+}
+
+.lupa {
+  width: 12px;
+  height: 12px;
+  color: #8e8e8e;
+  margin-left: 5px;
+}
+
+.busca:hover {
+	cursor: default;
+}
+
+.topo img {
+	display: flex;
+	align-self: flex-end;
+}
+
+.topo figure {
+	display: flex;
+	align-items: center;
+	height: 35px;
+	width: 150px;
+	justify-content: space-around;
+  margin-right: 50px;
+}
+
+nav {
+	height: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 200px;
+}
+
+/*-------------FIM CABECALHO --------*/
+/*------------ Início Corpo----------*/
+/* ----------- Inicio Feed ----------*/
+main {
+	width: 935px;
+	max-width: 100%;
+	margin: 30px auto 20px auto;
+}
+
+main img {
+  border-radius: 100%;
+  width: 32px;
+  height: 32px;
+}
+
+.feed {
+  width: 614px;
+	max-width: 100%;
+	margin-right: 28px;
+}
+
+.stories {
+  width: 100%;
+  height: 118px;
+  background: white;
+  border: 1px solid #DBDBDB;
+  margin-bottom: 24px;
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  align-items: center;
+  padding-left: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.h1_mobile {
+  display: none;
+}
+
+.meu_perfil {
+  display: none;
+  margin-top: 6px;
+}
+
+.stories ion-icon:first-child {
+  color: #0095f6;
+  border-radius: 100%;
+  background: white;
+  width: 22px;
+  position: absolute;
+  height: 22px;
+  top: 60px;
+  left: 50px;
+  z-index: 1;
+  display: none;
+}
+
+.foto_perfil {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.background {
+  width: 66px;
+  height: 66px;
+}
+
+.stories ion-icon {
+  position: absolute;
+  color: #f8f8ff;
+  width: 28px;
+  height: 28px;
+  top: 42px;
+  right: 7px;
+  z-index: 1;
+}
+
+.stories figure {
+  display: flex;
+  flex-direction: column;
+  height: 86px;
+  width: 66px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-right: 15px;
+}
+
+.stories h1 {
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 18px;
+}
+
+.publicacao {
+  width: 100%;
+  background: white;
+  border: 1px solid #DBDBDB;
+  display: flex;
+  flex-direction: column;
+}
+
+.fundo {
+  width: 38px;
+  height: 38px;
+}
+
+.absolute {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+}
+
+.publicacao .cima {
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+.cima ion-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.pessoa_post {
+  display: flex;
+  align-items: center;
+}
+
+.pessoa_post img {
+  margin-right: 16px;
+}
+
+.post img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.post video {
+  width: 100%;
+  height: 100%;
+}
+
+.comentarios header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0px 10px 0px 13px;
+  position: relative;
+}
+
+.comentarios .icones {
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.publicacao ion-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.red {
+ opacity: 0.15;
+ transition: opacity 150ms ease-in-out;
+}
+
+.red:hover {
+  color: #ED4956; 
+  opacity: 1;
+}
+
+.bandeira {
+  opacity: 1;
+  transition: opacity 150ms ease-in-out;
+}
+
+.bandeira:hover {
+  opacity: 0.5;
+}
+
+.comentarios .curtida {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.curtida img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.negrito {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.comentarios .texto {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+}
+
+.comentarios .comment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.coracao ion-icon{
+  width: 12px;
+  height: 12px;
+}
+
+.comment p {
+  margin-bottom: 5px;
+}
+
+.coracao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.coracao span:first-child {
+  width: calc(100% - 15px);
+}
+
+.comentarios .publicar {
+  height: 56px;
+  width: 100%;
+  padding: 0px 16px;
+  border-top: 1px solid #DBDBDB;
+  display: flex;
+}
+
+.publicar .adicionar {
+  flex-grow: 1;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: #0095f6;
+  opacity: 0.5;
+  transition: opacity 300ms ease-in-out;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.espaco {
+  width: 100%;
+  height: 60px;
+  background: #fafafa;
+}
+/* ----------- FIM Feed ----------*/
+/* -------- Inicio Barra Fixa --------*/
+aside {
+	width: 293px;
+	position: fixed;
+	height: 100%;
+	top: 84px;
+	right: calc((100% - 935px)/2);
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho_aside {
+  height: 56px;
+  padding-left: 5px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#espaco {
+  margin-left: 16px;
+  margin-top: 4px;
+}
+
+#espaco h2 {
+  margin-top: 3px;
+}
+
+hgroup {
+  margin-left: 10px;
+}
+
+hgroup h1 {
+  font-weight: 600;
+}
+
+.cabecalho_aside img, .foto_perfil, .meu_perfil {
+  width: 56px;
+  height: 56px;
+}
+
+.sugestao_topo {
+  height: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sugestao_corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px 0px 15px;
+  height: 310px;
+  padding-bottom: 15px;
+}
+
+aside article {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+article div {
+  display: flex;
+  align-items: center;
+}
+
+aside footer {
+  height: 84px;
+  font-size: 11px;
+  color: #c7c7c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 13px;
+}
+
+.grupo_ul ul {
+  margin-bottom: 4px;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+li::before {
+  content: "•";
+  color: inherit;
+  font-size: 8px;
+  margin: 0px 3px;
+}
+
+.sem_bolinha::before {
+  content: none;
+}
+
+.after::after {
+  content: "•";
+  color: inherit;
+  font-size: 8px;
+  margin-left: 3px;
+}
+
+.footer_mobile {
+	display: none;
+	width: 100%;
+	height: 54px;
+	position: fixed;
+	bottom: 0px;
+  border-top: 1px solid #DBDBDB;
+  z-index: 1;
+  background-color: white;
+}
+/* -------- Fim Barra Fixa --------*/
+/*------------ Fim Corpo----------*/
+/*------- Estilos Gerais (refatorar)------ */
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.cinza_texto {
+	color: #8e8e8e;
+}
+
+.seguir {
+  font-weight: 600;
+  color: #0095f6;
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.fonte_12 {
+	font-size: 12px;
+}
+
+.fonte_10 {
+  font-size: 10px;
+}
+/* ----FIM ESTILOS-----*/
+
+/* -----Responsividade-----*/
+@media (max-width: 600px) {
+
+  body {
+    padding-bottom: 54px;
+  }
+
+	.cabecalho_desktop {
+		display: none;
+	}
+
+	.cabecalho_mobile {
+		display: flex;
+    justify-content: space-around;
+    align-items: center;
+	}
+
+	aside {
+		display: none;
+	}
+
+	.footer_mobile {
+		display: flex;
+    justify-content: space-around;
+    align-items: center;
+	}
+
+	.feed {
+		margin-right: 0px;
+	}
+	
+	main {
+	  margin-top: 0px;
+	}
+	
+	.stories {
+	  margin-bottom: 0px;
+    background-color: #fafafa;
+    overflow: scroll;
+	}
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .stories ion-icon {
+    display: none;
+  }
+
+  .meu_perfil {
+    display: block;
+  }
+
+  .h1_mobile {
+    display: block;
+  }
+
+  .h1_desktop {
+    display: none;
+  }
+  
+  .primeiro {
+    display: none;
+  }
+
+  .stories ion-icon:first-child  {
+    display: block;
+  }
+  
+  .espaco {
+    height: 30px;
+  }
+}
